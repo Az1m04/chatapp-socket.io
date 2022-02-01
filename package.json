@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "scripts": {
+    "dev:server": "nodemon server.js",
+    "dev:client": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "dev": "start yarn dev:client && yarn dev:server "
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "next": "latest",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scroll-to-bottom": "^4.2.0",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.7",
+    "typescript": "4.5.4"
+  }
+}
