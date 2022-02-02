@@ -32,9 +32,9 @@ app.get('/', (req, res) => {
   res.send('Working')
 })
 
-const port = 5001 || process.env.PORT
+const port = process.env.PORT
 const host = 'localhost'
 
-server.listen(port, host, () => {
-  console.log(`http://${host}:${port}`)
+server.listen(port,() => {
+  // console.log(`http://${host}:${port}`)
 })

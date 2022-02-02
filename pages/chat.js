@@ -30,7 +30,7 @@ function chat() {
     socket.emit('joined', { user })
     socket.on('welcome', (data) => {
       if (data?.user === undefined) {
-        // router.push('/')
+        router.push('/')
       }
       setmessage([...message, data])
       console.log(data?.user, data?.message)
