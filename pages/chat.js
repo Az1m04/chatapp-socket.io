@@ -7,7 +7,7 @@ import ReactScrollToBottom from 'react-scroll-to-bottom'
 
 let socket
 
-const ENDPOINT = 'http://localhost:5001'
+const ENDPOINT = process.env.PORT
 
 function chat() {
   const router = useRouter()

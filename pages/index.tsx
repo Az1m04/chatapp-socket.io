@@ -3,8 +3,7 @@ import Link from 'next/link'
 import socketIO from 'socket.io-client'
 import Join from './join'
 
-const ENDPOINT = 'http://localhost:5001/'
-const socket = socketIO(ENDPOINT, { transports: ['websocket'] })
+const socket = socketIO(`${process.env.PORT}`, { transports: ['websocket'] })
 
 export default function Home() {
   socket.on('connect', () => {})
